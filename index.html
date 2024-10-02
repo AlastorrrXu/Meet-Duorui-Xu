@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duorui Xu - My Journey to Brown</title>
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .background-container {
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .swiper-container {
+            width: 80%;
+            height: 500px;
+            margin-top: 20px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Card Style */
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 15px;
+            width: 60%; /* Smaller width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            width: 80%; /* Smaller image size */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .year {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .card .details {
+            font-size: 1rem;
+            color: #333;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #4CAF50 !important;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <header>
+            <h1>Duorui Xu - My Journey to Brown University</h1>
+        </header>
+
+        <!-- Timeline Slider Container -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 2004 - 1st Card -->
+                <div class="swiper-slide">
+                    <div class="year">2004</div>
+                    <div class="card">
+                        <img src="photo1.jpg" alt="Duorui riding a camel">
+                        <div class="details">Though I may not be the eldest son of Texas, I am proud to be the eldest son of Xinjiang!</div>
+                    </div>
+                </div>
+                <!-- Slide 2004 - 2nd Card -->
+                <div class="swiper-slide">
+                    <div class="year">2004</div>
+                    <div class="card">
+                        <img src="photo2.png" alt="Duorui practicing Kung Fu in competition">
+                        <div class="details">From an early age, I trained in Kung Fu. This is a snapshot from one of my early competitions.</div>
+                    </div>
+                </div>
+                <!-- Slide 2004 - 3rd Card -->
+                <div class="swiper-slide">
+                    <div class="year">2004</div>
+                    <div class="card">
+                        <img src="photo3.png" alt="Duorui playing basketball">
+                        <div class="details">Basketball was another passion I discovered in my youth, which kept me active and engaged.</div>
+                    </div>
+                </div>
+                <!-- Slide 2009 -->
+                <div class="swiper-slide">
+                    <div class="year">2009</div>
+                    <div class="card">
+                        <img src="riot_image.jpg" alt="2009 riots">
+                        <div class="details">During the 2009 Xinjiang riots, a relative saved this picture of the chaos. The reality was far more terrifying...</div>
+                    </div>
+                </div>
+                <!-- Slide 2022 -->
+                <div class="swiper-slide">
+                    <div class="year">2022</div>
+                    <div class="card">
+                        <img src="photo_hk.png" alt="Hong Kong CUHK">
+                        <div class="details">In 2022, I attended The Chinese University of Hong Kong (CUHK), experiencing both Eastern and Western academic cultures.</div>
+                    </div>
+                </div>
+                <!-- Slide 2023 -->
+                <div class="swiper-slide">
+                    <div class="year">2023</div>
+                    <div class="card">
+                        <img src="photo_ta.png" alt="Duorui as a TA">
+                        <div class="details">I became a Teaching Assistant (TA) at UIUC, where I honed my teaching skills and grew more passionate about mentoring others.</div>
+                    </div>
+                </div>
+                <!-- Slide 2024 -->
+                <div class="swiper-slide">
+                    <div class="year">2024</div>
+                    <div class="card">
+                        <img src="future_brown.png" alt="Duorui aiming for Brown University">
+                        <div class="details">Now, I am fully prepared to apply to Brown University, with a clear vision of my future and the drive to make it happen.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Duorui Xu. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Swiper.js Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
