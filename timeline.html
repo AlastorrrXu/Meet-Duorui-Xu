@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="timeline.css">
+    <title>Duorui Xu - My Journey to Brown</title>
+</head>
+<body>
+    <div class="background-container">
+        <header>
+            <h1>Duorui Xu - My Journey to Brown</h1>
+        </header>
+
+        <div class="timeline">
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                <div id="cursor"></div>
+                <div class="timeline-point" onclick="showDetails('xinjiang')" data-year="2009">
+                    <div class="year">2009</div>
+                </div>
+                <div class="timeline-point" onclick="showDetails('shanghai')" data-year="2010">
+                    <div class="year">2010</div>
+                </div>
+                <div class="timeline-point" onclick="showDetails('cuhk')" data-year="2018">
+                    <div class="year">2018</div>
+                </div>
+                <div class="timeline-point" onclick="showDetails('russell')" data-year="2021">
+                    <div class="year">2021</div>
+                </div>
+                <div class="timeline-point" onclick="showDetails('stanford')" data-year="2022">
+                    <div class="year">2022</div>
+                </div>
+                <div class="timeline-point" onclick="showDetails('uiuc')" data-year="2023">
+                    <div class="year">2023</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="details">
+            <div id="xinjiang" class="details-content">
+                <h2>2009 - Xinjiang</h2>
+                <p>I was born in Xinjiang and experienced the 2009 riots, which left a deep impression on me and shaped my worldview as a global citizen.</p>
+            </div>
+            <div id="shanghai" class="details-content">
+                <h2>2010 - Shanghai</h2>
+                <p>My family moved to Shanghai, where I grew up and developed my early interest in mathematics and statistics.</p>
+            </div>
+            <div id="cuhk" class="details-content">
+                <h2>2018 - CUHK</h2>
+                <p>I was admitted to The Chinese University of Hong Kong (CUHK), where I explored a mix of Eastern and Western cultures.</p>
+            </div>
+            <div id="russell" class="details-content">
+                <h2>2021 - Russell Investments</h2>
+                <p>My internship at Russell Investments introduced me to data analysis and sparked my passion for applying statistics in the real world.</p>
+            </div>
+            <div id="stanford" class="details-content">
+                <h2>2022 - Stanford</h2>
+                <p>I joined Stanford as a visiting student, where I experienced the American education system and further developed my research skills.</p>
+            </div>
+            <div id="uiuc" class="details-content">
+                <h2>2023 - UIUC</h2>
+                <p>I transferred to the University of Illinois Urbana-Champaign (UIUC), and I am now preparing to pursue my dream of studying at Brown University.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Duorui Xu. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showDetails(sectionId) {
+            const allDetails = document.querySelectorAll('.details-content');
+            allDetails.forEach(detail => detail.style.display = 'none');
+            
+            document.getElementById(sectionId).style.display = 'block';
+
+            // Move the cursor to the active year
+            const activePoint = document.querySelector(`[onclick="showDetails('${sectionId}')"]`);
+            const cursor = document.getElementById('cursor');
+            cursor.style.left = `${activePoint.offsetLeft}px`;
+        }
+
+        // Set default visible section
+        showDetails('xinjiang');
+    </script>
+</body>
+</html>
