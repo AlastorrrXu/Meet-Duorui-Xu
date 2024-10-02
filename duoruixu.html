@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duorui Xu - My Journey to Brown</title>
+    <!-- Link to Swiper.js for the sliding timeline -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .background-container {
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            color: #fff;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .swiper-container {
+            width: 80%;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .year {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .details {
+            font-size: 1.2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #4CAF50 !important;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <header>
+            <h1>Duorui Xu - My Journey to Brown University</h1>
+        </header>
+
+        <!-- Timeline Slider Container -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- 2004 Slide -->
+                <div class="swiper-slide">
+                    <div class="year">2004</div>
+                    <div class="details">
+                        This is where it all began. I started school and began laying the foundation for future success.
+                    </div>
+                </div>
+                <!-- 2009 Slide -->
+                <div class="swiper-slide">
+                    <div class="year">2009</div>
+                    <div class="details">
+                        Life presented significant challenges, shaping my determination and perseverance to succeed.
+                    </div>
+                </div>
+                <!-- 2022 Slide -->
+                <div class="swiper-slide">
+                    <div class="year">2022</div>
+                    <div class="details">
+                        I joined Stanford University as a visiting student, enhancing my research skills and broadening my academic perspective.
+                    </div>
+                </div>
+                <!-- 2023 Slide -->
+                <div class="swiper-slide">
+                    <div class="year">2023</div>
+                    <div class="details">
+                        Transferring to UIUC, I embarked on a new academic journey and continued pursuing my dream of studying at Brown.
+                    </div>
+                </div>
+                <!-- 2024 Slide -->
+                <div class="swiper-slide">
+                    <div class="year">2024</div>
+                    <div class="details">
+                        Now, I am fully prepared to apply to Brown University, with a clear vision of the future I want to build.
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination and Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Duorui Xu. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Swiper.js for the timeline slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
+
